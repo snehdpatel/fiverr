@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/head_yellow"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_bg"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_cicle_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/hint_title"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_bg"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_cicle_owner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/hint_owner"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_bg"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_cicle_location"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/hint_location"
+                android:singleLine="true"
+                android:paddingTop="20dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton2"
+                android:layout_weight="4"
+                android:background="@drawable/map_icon"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_bg"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/add_cicle_start_date"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hint_date_to_start"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:textSize="18dp"
+                android:textIsSelectable="false"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/start_date_button"
+                android:layout_weight="6"
+                android:background="@drawable/cal"
+                android:layout_marginRight="15dp"
+                android:visibility="visible"
+                android:nestedScrollingEnabled="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:onClick="setDate"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_bg"
+            android:layout_marginBottom="8dp">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/add_cicle_finish_date"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hint_date_to_finish"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:textSize="18dp"
+                android:textIsSelectable="false"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/date_to_finish"
+                android:layout_weight="6"
+                android:background="@drawable/cal"
+
+                android:layout_marginRight="15dp"
+                android:visibility="visible"
+                android:nestedScrollingEnabled="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:onClick="setDate"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/add_cicle_type" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/hint_save"
+                android:id="@+id/add_cicle_save"
+                android:layout_gravity="left|center|right"
+                android:layout_marginLeft="180dp"
+                android:background="@color/green_button_addCicle"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

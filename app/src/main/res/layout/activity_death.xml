@@ -1,0 +1,272 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:background="@color/yellow"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/my_toolbar_death"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/head_yellow"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deaths (3)"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/textView13" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:dividerHeight="10dp"
+                android:divider="@color/yellow"
+                android:layout_height="wrap_content"
+                android:id="@+id/death_list" />
+            <!--<LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:background="@color/white"
+                        android:text="Designation"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:id="@+id/textView5" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:background="@color/white"
+                            android:text="Type"
+                            android:textStyle="bold"
+                            android:textColor="@color/green_dark"
+                            android:textSize="20dp"
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:background="@color/white"
+                            android:text="equipment 1"
+                            android:textColor="@color/green_dark"
+                            android:textSize="20dp"
+                            android:id="@+id/textView18" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="152120 USD"
+                    android:id="@+id/textView14" />
+            </LinearLayout>
+
+            <View
+                android:layout_height="5dp"
+                android:layout_width="fill_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/yellow"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:background="@color/white"
+                        android:text="Designation"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:id="@+id/textView7" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:background="@color/white"
+                            android:text="Type"
+                            android:textStyle="bold"
+                            android:textColor="@color/green_dark"
+                            android:textSize="20dp"
+                            android:id="@+id/textView19" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:background="@color/white"
+                            android:text="equipment 1"
+                            android:textColor="@color/green_dark"
+                            android:textSize="20dp"
+                            android:id="@+id/textView20" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="152120 USD"
+                    android:id="@+id/textView15" />
+            </LinearLayout>
+
+            <View
+                android:layout_height="5dp"
+                android:layout_width="fill_parent"
+                android:background="@color/yellow"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:background="@color/white"
+                        android:text="Designation"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:id="@+id/textView9" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:background="@color/white"
+                            android:text="Type"
+                            android:textStyle="bold"
+                            android:textColor="@color/green_dark"
+                            android:textSize="20dp"
+                            android:id="@+id/textView21" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:background="@color/white"
+                            android:text="equipment 1"
+                            android:textColor="@color/green_dark"
+                            android:textSize="20dp"
+                            android:id="@+id/textView22" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="152120 USD"
+                    android:id="@+id/textView16" />
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_death"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.example.sneh.myapplication.ScrollAwareFABBehavior"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:src="@drawable/plus"
+            app:layout_anchorGravity="bottom|right|end"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

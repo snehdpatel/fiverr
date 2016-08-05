@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/add_done_date"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="Date to Start"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:textSize="18dp"
+                android:textIsSelectable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/start_date_button"
+                android:layout_weight="6"
+                android:background="@drawable/cal"
+
+                android:layout_marginRight="15dp"
+                android:visibility="visible"
+                android:nestedScrollingEnabled="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+               />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yellow">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Tasks (5)"
+            android:paddingLeft="10dp"
+            android:id="@+id/count_today_task_done" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="10dp"
+            android:divider="@color/yellow"
+            android:background="@color/white"
+            android:id="@+id/listView_today_task_done" />
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>

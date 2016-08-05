@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellow">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/head_yellow"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/green">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/starting_animals"
+                android:textColor="@color/black"
+                android:text="@string/hint_starting_animals"
+                android:layout_weight="1"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/starting_animals_input"
+                android:textColor="@color/white"
+                android:text="1500002"
+                android:layout_weight="3"
+                android:textSize="50dp"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/brown_alive_screen">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dead_animals"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:text="@string/hint_dead_animals"
+                android:layout_weight="1"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dead_animals_entry"
+                android:textColor="@color/white"
+                android:text="1005"
+                android:layout_weight="3"
+                android:focusableInTouchMode="false"
+                android:textSize="50dp"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/pink_alive_screen">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="@string/hint_alive_animals"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alive_animals_entry"
+                android:textColor="@color/white"
+                android:text="148997"
+                android:layout_weight="3.01"
+                android:textSize="50dp"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar_add_worker"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/head_yellow"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_name"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"
+            android:id="@+id/add_worker_name" />
+
+        <View
+            android:layout_height="5dp"
+            android:layout_width="fill_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/yellow"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"
+            android:background="@color/white"
+            android:hint="@string/hint_address"
+            android:textColor="@color/black"
+            android:id="@+id/add_worker_address" />
+
+        <View
+            android:layout_height="5dp"
+            android:layout_width="fill_parent"
+            android:background="@color/yellow"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="10dp"
+            android:inputType="phone"
+            android:textSize="20dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="@string/hint_mobile_tel"
+            android:id="@+id/add_worker_phone" />
+
+        <View
+            android:layout_height="5dp"
+            android:layout_width="fill_parent"
+            android:background="@color/yellow"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_bg"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/add_worker_start_date"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="@string/hint_date_to_start"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:textSize="18dp"
+                android:textIsSelectable="false"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton"
+                android:layout_weight="6"
+                android:background="@drawable/cal"
+                android:layout_marginRight="15dp"
+                android:visibility="visible"
+                android:nestedScrollingEnabled="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:onClick="setDate"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="5dp"
+            android:layout_width="fill_parent"
+            android:background="@color/yellow"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_daily"
+            android:id="@+id/textView8"
+            android:textSize="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:hint="@string/hint_price"
+                android:id="@+id/add_worker_price"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+
+                android:id="@+id/add_equipment_currency"
+                android:layout_weight="3"
+                android:textSize="23dp"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="left|center|right"
+            android:layout_marginLeft="180dp"
+            android:background="@color/green_button_addCicle"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:text="@string/hint_save"
+            android:id="@+id/add_worker_save"/>
+
+    </LinearLayout>
+
+</LinearLayout>

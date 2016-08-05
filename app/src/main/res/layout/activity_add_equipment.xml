@@ -1,0 +1,139 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar_add_equipment"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/head_yellow"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_equipment_spinner"
+                android:background="@drawable/layout_bg"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_add_eqipment"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_height="5dp"
+                android:layout_width="fill_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/yellow"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:background="@color/white"
+                android:hint="@string/hint_designation"
+                android:textColor="@color/black"
+                android:id="@+id/add_equipment_designation" />
+
+            <View
+                android:layout_height="5dp"
+                android:layout_width="fill_parent"
+                android:background="@color/yellow"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:inputType="number"
+                android:paddingBottom="10dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:hint="@string/hint_quantity"
+                android:id="@+id/add_equipment_quantity" />
+
+            <View
+                android:layout_height="5dp"
+                android:layout_width="fill_parent"
+                android:background="@color/yellow"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:hint="@string/hint_price"
+                    android:id="@+id/add_equipment_price"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+
+                    android:id="@+id/add_equipment_currency"
+                    android:layout_weight="3"
+                    android:textSize="23dp"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_equipment_save"
+                android:layout_marginTop="10dp"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/hint_save"
+                android:layout_gravity="left|center|right"
+                android:layout_marginLeft="180dp"
+                android:background="@color/green_button_addCicle"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>

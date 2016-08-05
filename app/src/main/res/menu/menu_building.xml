@@ -1,0 +1,14 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sneh.myapplication.Building">
+
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/info"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="info" />
+
+</menu>
